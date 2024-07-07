@@ -1,2 +1,7 @@
 # project-cha
-project cha is a video call application
+
+Project cha is a video chat application that will allow users to randomly call users.
+
+
+
+
