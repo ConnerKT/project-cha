@@ -1,20 +1,19 @@
-import './App.css'
+import "./App.css";
+import LandingPage from "./components/LandingPage/LandingPage.jsx";
+import ChatRoom from "./components/ChatRoom/ChatRoom.jsx";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
-
   return (
     <>
-    <h1 className="text-8xl py-8">
-      Chat Now
-    </h1>
-    <p className='py-5'>
-      The comfy video chat application.
-    </p>
-     <h1 className="btn">
-      Chat Now
-    </h1>
+      <Router>
+          <Routes>
+            <Route path={'/chat'} element={<ChatRoom/>}></Route>
+            <Route path={'/'} element={<LandingPage/>}></Route>
+          </Routes>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
